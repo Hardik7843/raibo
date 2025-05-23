@@ -5,10 +5,12 @@ import NavBar from "@/components/NavBar";
 import PricingSection from "@/components/PricingSection";
 import ServiceSection from "@/components/ServiceSection";
 import Image from "next/image";
+// import { PrimeReactProvider } from 'primereact/api';
 
 export default function Home() {
   return (
     <div>
+      {/* <PrimeReactProvider></PrimeReactProvider> */}
       <NavBar />
       <AboutSection />
       <PricingSection />

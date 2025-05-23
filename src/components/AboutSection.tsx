@@ -11,9 +11,12 @@ const AboutSection = () => {
   const current = aboutTabs.find((tab) => tab.id === activeTab);
 
   return (
-    <section className=" text-white h-fit px-12" id="about">
+    <section
+      className="text-white min-h-[60vh] px-12 scroll-mt-[80px]"
+      id="about"
+    >
       <SectionHead>About Us</SectionHead>
-      <div className="w-full grid grid-cols-3 mb-16 ">
+      <div className="w-full grid grid-cols-3 mb-16">
         {aboutTabs.map((tab) => (
           <div key={tab.id} className="w-full">
             <button
