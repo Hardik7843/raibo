@@ -3,10 +3,10 @@ export const navlinks = [
         name: "About",
         path: "#about",
     },
-    {
-        name: "Pricing",
-        path: "#pricing",
-    },
+    // {
+    //     name: "Pricing",
+    //     path: "#pricing",
+    // },
     {
         name: "Services",
         path: "#services"

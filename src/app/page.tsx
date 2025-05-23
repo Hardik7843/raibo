@@ -13,7 +13,7 @@ export default function Home() {
       {/* <PrimeReactProvider></PrimeReactProvider> */}
       <NavBar />
       <AboutSection />
-      <PricingSection />
+      {/* <PricingSection /> */}
       <ServiceSection />
       <ContactSection />
     </div>
