@@ -32,8 +32,8 @@ export const oneYearPlans: PricingCardProps[] = [
     title: "1 Year Plan",
     price: "89000",
     points: [
-      "3 years calling enabled",
-      "1 months unlimited customer data",
+      "1 year calling enabled",
+      "6 months unlimited customer data",
       "Email & SMS enabled from sub mail address",
       "Mail support. For service and 10 visit from technician air maintanance"
     ],
