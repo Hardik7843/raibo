@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import React, { useState } from "react";
 import SectionHead from "./SectionHead";
@@ -29,6 +28,7 @@ const ContactSection = () => {
       console.log("Submitted Data:", formData);
       // Simulate async action
       await new Promise((res) => setTimeout(res, 2000));
+      resetForm();
     } catch (error) {
       console.error("Submission failed:", error);
     } finally {
@@ -47,7 +47,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="text-white scroll-mt-[80px] min-h-[60vh]">
+    <section
+      id="contact"
+      className="text-white scroll-mt-[80px] min-h-[60vh] mb-10"
+    >
       <SectionHead>Contact Us</SectionHead>
 
       <div className="max-w-lg mx-auto flex flex-col gap-y-5 mt-8">
@@ -96,9 +99,8 @@ const ContactSection = () => {
           <button
             onClick={handleSubmit}
             disabled={isSubmitting}
-            className={`bg-blue-600 hover:bg-blue-700 transition p-3 rounded-md text-white font-medium ${
-              isSubmitting ? "opacity-50 cursor-not-allowed" : ""
-            }`}
+            className={`bg-blue-500 w-full hover:bg-purple-500 transition-all duration-200 ease-initial px-3 py-2 rounded-md text-white font-medium 
+              ${isSubmitting ? "opacity-50 cursor-not-allowed" : ""}`}
           >
             {isSubmitting ? "Sending..." : "Send"}
           </button>

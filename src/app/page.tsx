@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
+import HeroSection from "@/components/HeroSection";
 import NavBar from "@/components/NavBar";
 import PricingSection from "@/components/PricingSection";
 import ServiceSection from "@/components/ServiceSection";
@@ -12,8 +13,9 @@ export default function Home() {
     <div>
       {/* <PrimeReactProvider></PrimeReactProvider> */}
       <NavBar />
+      <HeroSection />
       <AboutSection />
-      {/* <PricingSection /> */}
+      <PricingSection />
       <ServiceSection />
       <ContactSection />
     </div>

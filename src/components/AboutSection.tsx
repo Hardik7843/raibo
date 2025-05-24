@@ -12,29 +12,29 @@ const AboutSection = () => {
 
   return (
     <section
-      className="text-white min-h-[60vh] px-12 scroll-mt-[80px]"
+      className="text-white min-h-[60vh] px-12 scroll-mt-[80px] mt-16"
       id="about"
     >
       <SectionHead>About Us</SectionHead>
-      <div className="w-full grid grid-cols-3 mb-16">
+      <div className="flex justify-center gap-x-16 my-6">
         {aboutTabs.map((tab) => (
-          <div key={tab.id} className="w-full">
-            <button
-              onClick={() => setActiveTab(tab.id)}
-              className={`  w-full py-2 px-4 text-lg font-semibold ${
-                activeTab === tab.id
-                  ? "border-b-2 border-blue-600 text-blue-600"
-                  : "text-gray-50 hover:text-blue-500 "
-              }`}
-            >
-              <p>{tab.title}</p>
-            </button>
-          </div>
+          <button
+            key={tab.id}
+            onClick={() => setActiveTab(tab.id)}
+            className={` py-2 px-4 text-lg font-semibold ${
+              activeTab === tab.id
+                ? "border-b-2 border-blue-600 text-blue-600"
+                : "text-gray-50 hover:text-blue-500 "
+            }`}
+          >
+            <p>{tab.title}</p>
+          </button>
         ))}
       </div>
 
       {/* Tab Content */}
-      {current && <Tab tabItem={current}></Tab>}
+      {/* {current && <Tab tabItem={current}></Tab>} */}
+      {current && <Tab key={current.id} tabItem={current} />}
     </section>
   );
 };
